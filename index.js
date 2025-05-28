@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 cloudinary.config({
   cloud_name: 'dcizcurp0',
   api_key: '814712361556897',
-  api_secret: 'NSzxXNBTXL7AwiUHUYdhEMM8q7Q',
+  api_secret: 'hK-AYTwJ3mheqnv40tD6roKAkkg',
 });
 
 // Service Account untuk Firebase JWT
