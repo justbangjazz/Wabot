@@ -21,7 +21,7 @@ cloudinary.config({
 const serviceAccount = {
   private_key: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
   client_email: 'firebase-adminsdk-fbsvc@scabj-949c6.iam.gserviceaccount.com',
-  project_id: 'SCABJ',
+  project_id: 'scabj-949c6',
 };
 
 // Fungsi untuk ambil access token dari Firebase
