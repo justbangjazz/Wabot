@@ -12,16 +12,16 @@ const PORT = process.env.PORT || 3000;
 
 // Konfigurasi Cloudinary
 cloudinary.config({
-  cloud_name: 'dizjo8vzg',
-  api_key: '373539693517747',
-  api_secret: 'HcUwhQbFHK9j4PJ0fypeT-LIaj8',
+  cloud_name: 'dcizcurp0',
+  api_key: '814712361556897',
+  api_secret: 'hK-AYTwJ3mheqnv40tD6roKAkkg',
 });
 
 // Service Account untuk Firebase JWT
 const serviceAccount = {
   private_key: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
-  client_email: 'firebase-adminsdk-fbsvc@wabot-d73ef.iam.gserviceaccount.com',
-  project_id: 'wabot-d73ef',
+  client_email: 'firebase-adminsdk-fbsvc@scabj-949c6.iam.gserviceaccount.com',
+  project_id: 'scabj-949c6',
 };
 
 // Fungsi untuk ambil access token dari Firebase
@@ -103,7 +103,7 @@ client.on('message', async (message) => {
   try {
     const accessToken = await getAccessToken();
 
-    const webhookResponse = await fetch('https://hook.eu2.make.com/u9qvqgenv1enxpu854lfeufxsfaaql2u', {
+    const webhookResponse = await fetch('https://hook.us2.make.com/9u5lum9e09cffb5qgn5avninky6s3e86', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
